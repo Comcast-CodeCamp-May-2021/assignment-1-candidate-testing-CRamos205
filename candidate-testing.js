@@ -8,8 +8,8 @@ let candidateName = "";
 let question = [];
 let correctAnswer = 0;
 let candidateAnswer = "";
-let questions = ["Who was the First American Woman in space? ", "True Or false: 5 kilometers == 5000 meters? ", "(5+3)/2*10=? ", "Given the array: [8, 'orbit', 'trojectory', 45] What entry is at index 2? ", "What is the minimum crew size for ISS? "];
-let correctAnswers = ["sally ride", "true", "40", "trojectory", "3"];
+let questions = ["Who was the first American woman in space? ", "True or false: 5 kilometer == 5000 meters? ", "(5+3)/2*10=? ", "Given the array: [8, 'Orbit', 'Trajectory', 45] What entry is at index 2? ", "What is the minimum crew size for ISS? "];
+let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"];
 let candidateAnswers = [];
 
 function askForName() {
