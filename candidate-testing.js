@@ -17,23 +17,15 @@ function askForName() {
 
 let candidateName = input.question("What is your Name? "); // getting the customers input for their name
 console.log("Welcome " + candidateName); 
-
 }
-
-// console.log("Welcome " + askForName(candidateName)); // welcoming the customer 
-
 function askQuestion() {
-  // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
+  // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer
 for(let i = 0; i < questions.length; i++){
    candidateAnswer = input.question(questions[i]); //loop that calls the array to ask every question on the quiz and preserving their answers in an answer array.
    candidateAnswers.push(candidateAnswer);
-   
-
   }
   return candidateAnswers;
 }
-
-
 function gradeQuiz(candidateAnswers) {
 //   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 for(let i = 0; i < correctAnswers.length; i ++){
@@ -45,7 +37,6 @@ else{
   console.log("This is not correct " + candidateAnswers[i]);
   console.log(" The correct answer is " + correctAnswers[i]);
 }
- 
 }
 let grade = (correctAnswer/ questions.length) * 100;
  //Number(correctAnswers/ questions) * 100
@@ -53,19 +44,16 @@ if(grade >= Number(80)){
   console.log(">>> Overall Grade: " + grade + " Number of correct Answers: " + correctAnswer + " >>> Passed <<<");
 }
   else{
-    console.log(">>>Overall Grade: "+ grade + "Number of correct Answers: " + correctAnswer + " >>> Status: FAILED <<<");
+    console.log(">>>Overall Grade: "+ grade + " Number of correct Answers: " + correctAnswer + " >>> Status: FAILED <<<");
   }
 }
-
-
-
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
   
   askQuestion();
   
-  gradeQuiz(candidateAnswers);
+  gradeQuiz(this.candidateAnswers);
 }
 
 // Don't write any code below this line //
