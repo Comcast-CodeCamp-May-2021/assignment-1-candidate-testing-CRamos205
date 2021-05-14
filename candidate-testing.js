@@ -41,10 +41,10 @@ else{
 let grade = (correctAnswer/ questions.length) * 100;
  //Number(correctAnswers/ questions) * 100
 if(grade >= Number(80)){
-  console.log(">>> Overall Grade: " + grade + " Number of correct Answers: " + correctAnswer + " >>> Passed <<<");
+  console.log(">>> Overall Grade: " + grade + "%" + " Number of correct Answers: " + correctAnswer + " >>> Passed <<<");
 }
   else{
-    console.log(">>>Overall Grade: "+ grade + " Number of correct Answers: " + correctAnswer + " >>> Status: FAILED <<<");
+    console.log(">>> Overall Grade: "+ grade + "%" + " Number of correct Answers: " + correctAnswer + " >>> Status: FAILED <<<");
   }
 }
 function runProgram() {
@@ -53,7 +53,7 @@ function runProgram() {
   
   askQuestion();
   
-  gradeQuiz(this.candidateAnswers);
+  gradeQuiz(candidateAnswers);
 }
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
